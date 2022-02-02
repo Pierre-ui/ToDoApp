@@ -1,4 +1,9 @@
 a {
     padding: 7px;
     border-radius: 8px;
+    background-image: none !important;
+}
+
+.img {
+    margin-top: -15px;
 }
