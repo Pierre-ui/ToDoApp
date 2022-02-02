@@ -78,7 +78,7 @@ if(isset($_POST['formconnexion'])) {
 
     <?php
     if(isset($erreur)) {
-        echo '<div class="text-center paper-container">'.$erreur."</div>";
+        echo '<div class="text-center paper-container text-rose-600">'.$erreur."</div>";
     }
     ?>
 </body>
