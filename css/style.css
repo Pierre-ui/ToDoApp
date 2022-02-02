@@ -5,5 +5,9 @@ a {
 }
 
 .img {
-    margin-top: -15px;
+    margin-top: -22px;
+}
+
+.paper-switch-2 {
+    margin-left: 40px !important;
 }
