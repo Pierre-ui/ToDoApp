@@ -106,6 +106,10 @@ if (isset($erreur)) {
                 <label for="password2" class="text-center mt-4">Confirmer le mot de passe</label>
                 <input type="password" id="password2" name="password2" class="mt-4 p-1">
 
+                <div class="mt-1">
+                    <a href="connexion.php">J'ai déjà un compte MyToTool</a>
+                </div>
+
                 <button type="submit" name="forminscription" class="mt-6 paper-btn btn-small">Je m'inscris</button>
             </form>
         </div>
