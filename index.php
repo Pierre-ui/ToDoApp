@@ -15,7 +15,7 @@
 <body class="bg-white">
     <header>
         <div class="flex justify-end mt-8 mr-8">
-            <a href="connexion.html"><img src="./assets/noun-user-4556567.svg" alt="user-icon" class="h-10"></a>
+            <a href="connexion.php"><img src="./assets/noun-user-4556567.svg" alt="user-icon" class="h-10"></a>
             <a href="#"><img src="./assets/noun-setting-4556871.svg" alt="user-icon" class="h-10"></a>
         </div>
     </header>
@@ -30,11 +30,11 @@
         </div>
 
         <div class="text-center mt-5">
-            <a href="#" class="">Pas de compte ? Créez en un !</a>
+            <a href="inscription.php" class="">Pas de compte ? Créez en un !</a>
         </div>
 
         <div class="mt-10 flex justify-center">
-            <a href="connexion.html" class="paper-btn btn-small">Je me connecte !</a>
+            <a href="connexion.php" class="paper-btn btn-small">Je me connecte !</a>
         </div>
 
         <footer class="flex justify-end">
