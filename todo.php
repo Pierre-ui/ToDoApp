@@ -38,13 +38,39 @@ session_start();
 </head>
 <body class="bg-white">
 
-    <header>
-        <div class="flex justify-end mt-8 mr-8">
-            <a href="connexion.php"><img src="./assets/noun-user-4556567.svg" alt="user-icon" class="h-10"></a>
-            <a href="#"><img src="./assets/noun-setting-4556871.svg" alt="user-icon" class="h-10"></a>
-            <a href="deconnexion.php"><img src="./assets/noun-power-652650.svg" alt="power-off" class="h-10"></a>
+    <div class="main">
+
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <a href="index.php"><span class="icon"><img src="./assets/noun-home-1074556.svg" alt="" class="img"></span></a>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <a href="connexion.php"><span class="icon"><img src="./assets/noun-user-4556567.svg" alt="" class="img"></span></a>
+                        <a href=""><span class="text">Profil</span></a>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <a href="#"><span class="icon"><img src="./assets/noun-setting-4556871.svg" alt="" class="img"></span></a>
+                        <span class="text">Paramètres</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <a href="deconnexion.php"><span class="icon"><img src="./assets/noun-power-652650.svg" alt="" class="img"></span></a>
+                        <span class="text">Déconnexion</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
         </div>
-    </header>
+
+    </div>
 
     <div class="p-6">
         <div class="paper container bg-slate-300/50">
@@ -103,6 +129,19 @@ session_start();
                 </div>
         </div>
     </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+    </script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d73c660df62ee2b',m:'JEru9bV9Kqb7EwVJy37sJgFPc.cloa0Ee5zyFRPL4uo-1643808635-0-AYfhALH5I2gc6edyBa3vjUE3oNP14k4Uq06/fUuc2U0umwyxrnniDzq1LYEoudhH7g6ibgtV50CCpm+s5euBku+BLz2xegYX35LCAyY983zts6eLAdKqoRpyGjAuC/qCgaM96gWwyIFWmMD4UsXn4oflj1TiYDIn9qgV+35XyhhTS8Xr0l21iBJFuA803lr9hg==',s:[0x396f5fd20f,0x80b4fe3e8b],}})();</script>
 
 </body>
 </html>
